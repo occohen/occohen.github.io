@@ -1,6 +1,27 @@
+.hohoho{
+	background-color: green;
+	width: 100px;
+	height: 100px;
+
+}
+
+
+
+.announcement{
+	justify-content: center;
+	margin-top: 500px;
+}
+#pass{
+	width: 500px;
+	height: auto;
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	background-color: blue;
+}
 
 body{
-	background-color: green;
+	background-color: #f5fffa;
 }
 
 .navig{
