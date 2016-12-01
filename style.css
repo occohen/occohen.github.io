@@ -4,7 +4,17 @@
 	height: 100px;
 
 }
+html{
+	height: 100%;
+}
 
+.sidebar{
+	right: 0;
+	position: fixed;
+	height: 100%;
+	background-color: purple;
+	width:20%;
+}
 
 
 .announcement{
@@ -22,6 +32,8 @@
 
 body{
 	background-color: #f5fffa;
+	min-height: 100%;
+	margin: 0px;
 }
 
 .navig{
@@ -29,7 +41,10 @@ body{
 	height: 110px;
 	width: 100%;
 }
-
+.whitey{
+	width: 80%;
+	margin:10px;
+}
 .buttons {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #200ac7), color-stop(1, #5aa65a));
 	background:-moz-linear-gradient(top, #200ac7 5%, #5aa65a 100%);
