@@ -4,7 +4,6 @@
   		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<title>Made by Ori</title>
-  		<!-- <script type="text/javascript" src="script/password.js"></script> -->
   		<script type="text/javascript">
   			function password (){
 				var passy = prompt("What is the password?");
@@ -13,13 +12,12 @@
 					alert("WRONG enter the password again");
 					passy = prompt("What is the password?");
 				}
-				document.getElementById("pass").innerHTML += "Proceed to the next page";
+				window.open("home.html");
 			}
   		</script>
  		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="hohoho" onclick="password()">Click here to enter password!</div>
-		<a href="home.html"><div id="pass"></div></a>
 	</body>
 </html>
