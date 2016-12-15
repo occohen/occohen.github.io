@@ -20,19 +20,23 @@
   			function onloadFunction(){
 				setInterval(function(){loadpicture();}, 5000);
 			}
-// 			var numbers = 1;
-
-// function moveredbox(){
-//   var redbox = document.getElementById("redbox");
-//   redbox.innerHTML = numbers;
-//   redbox.style.left = (Math.random()*100)+1 +"%"; 
-//   redbox.style.top = (Math.random()*100)+1 +"%"; 
-//   numbers  ++;
-// }
-// function onloadfunction(){
-//   setInterval(function(){ moveredbox(); }, 1000); 
-// }
-
+			function game(){
+ 				alert ("I am thinking of a number between 1-100 you have 6 tries to find it.");
+				var random =Math.floor((Math.random()*100) +1);
+				var guess=0;
+				for(var i=0; i<6; i++){
+					guess = prompt("PICK A NUMBER,ANY NUMBER (preferably 1-100)");
+				    if(guess > random){ 
+				      alert("TOO HIGH, GUESS A LOWER ONE BRO");
+				    } else if(guess < random){
+				      alert("TOO LOW, GUESS A HIGHER ONE BRO");
+				    } else if(guess == random){
+				      alert("DUDE! YOU GOT IT! YOU ARE AWESOME! HOW DID YOU DO IT????");
+				      break;
+				    }
+				  }
+				  if(guess != random) alert("Sorry, the number was "+random);
+				}
   		</script>
 	</head>
 	<body onload="onloadFunction()">
@@ -65,6 +69,7 @@
 		<div class="whitey">
 			<h5 class="center">this entire website was coded and designed by the almighty ORI COHEN! This is also a DreamPigs production! </h5>
 			<h3>Welcome to main homepage. I will be posting all major 5th grade content on this page. If you want anything added to the website that you think I missed, please contact me as soon as the next day at school!</h3>
+			<button onclick="game()" class="gamebutton">CLICK ME FOR A GAME</button>
 			<img src="images/camel.jpg" id="images">
 			<div class="announcement">
 				<h1>MAJOR ANNOUNCMENT: WTAR PLAY ON MONDAY!</h1>
