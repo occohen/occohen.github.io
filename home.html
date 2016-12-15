@@ -10,9 +10,15 @@
  			var picArr = ["images/camel.jpg", "images/wine.jpg", "images/hollywood.jpg"];
  			function loadpicture(){
  				var pic = document.getElementById("images");
+ 				i ++;
+ 				if(i=== picArr.length){
+ 					i=0;
+ 				}
+
+ 				pic.src= picArr[i];
  			}
   			function onloadFunction(){
-				setInterval(function(){loadpicture();}, 20000);
+				setInterval(function(){loadpicture();}, 5000);
 			}
 // 			var numbers = 1;
 
