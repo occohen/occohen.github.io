@@ -16,10 +16,13 @@ html{
 	width:20%;
 }
 
-
+#images{
+	width: 831px;
+	height: 623.250px;
+}
 .announcement{
 	justify-content: center;
-	margin-top: 500px;
+	margin-top: 20px;
 }
 #pass{
 	width: 500px;
